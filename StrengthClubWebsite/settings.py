@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'home',
     'events',
     'join',
-    'tools',
+    'resources',
 ]
 
 MIDDLEWARE = [

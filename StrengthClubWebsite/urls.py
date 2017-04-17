@@ -41,9 +41,9 @@ urlpatterns += [
     url(r'^join/', include('join.urls')),
 ]
 
-#For tools page
+#For resources page
 urlpatterns += [
-    url(r'^tools/', include('tools.urls')),
+    url(r'^resources/', include('resources.urls')),
 ]
 
 
