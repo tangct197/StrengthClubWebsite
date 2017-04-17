@@ -40,11 +40,7 @@ INSTALLED_APPS = [
     'home',
     'events',
     'join',
-<<<<<<< HEAD
     'resources',
-=======
-    'tools',
->>>>>>> 5b4c7bb6708dcb83d5b08bf6b6b73f8816efeb94
 ]
 
 MIDDLEWARE = [
