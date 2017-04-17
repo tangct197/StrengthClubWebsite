@@ -44,6 +44,7 @@ urlpatterns += [
 #For resources page
 urlpatterns += [
     url(r'^resources/', include('resources.urls')),
+]
 
 #This will set your base url to /home/
 urlpatterns += [
