@@ -15,10 +15,20 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-#from django.views.generic import RedirectView
+from django.views.generic import RedirectView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+]
+
+#For about page
+urlpatterns += [
+    url(r'^about/', include('about.urls')),
+]
+
+#For events page
+urlpatterns += [
+    url(r'^events/', include('events.urls')),
 ]
 
 #For home page
@@ -26,6 +36,18 @@ urlpatterns += [
     url(r'^home/', include('home.urls')),
 ]
 
-#urlpatterns += [
-#    url(r'^$', RedirectView.as_view(url='/home/', permanent=True)),
-#]
+#For join page
+urlpatterns += [
+    url(r'^join/', include('join.urls')),
+]
+
+#For tools page
+urlpatterns += [
+    url(r'^tools/', include('tools.urls')),
+]
+
+
+#This will set your base url to /home/
+urlpatterns += [
+    url(r'^$', RedirectView.as_view(url='/home/', permanent=True)),
+]
