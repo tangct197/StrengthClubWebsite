@@ -41,9 +41,15 @@ urlpatterns += [
     url(r'^join/', include('join.urls')),
 ]
 
+<<<<<<< HEAD
 #For resources page
 urlpatterns += [
     url(r'^resources/', include('resources.urls')),
+=======
+#For tools page
+urlpatterns += [
+    url(r'^tools/', include('tools.urls')),
+>>>>>>> 5b4c7bb6708dcb83d5b08bf6b6b73f8816efeb94
 ]
 
 
