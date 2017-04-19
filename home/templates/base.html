@@ -46,6 +46,7 @@
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
                 <a class="navbar-brand page-scroll" href="{% url 'home' %}">Potsdam Strength</a>
+                <link rel="icon" type="image/png" href="/static/img/potsdam_bear_32_32.ico" sizes="32x32">
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -88,7 +89,7 @@
                 <h1 id="homeHeading">Our Club</h1>
                 <hr>
                 <p>Come join us at Maxcy!</p>
-                <a href="wwww.linktoaboutpage.com" class="btn btn-primary btn-xl page-scroll">What we're about!</a>
+                <a href="{% url 'about' %}" class="btn btn-primary btn-xl page-scroll">What we're about!</a>
             </div>
         </div>
     </header>
